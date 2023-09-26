@@ -7,4 +7,8 @@
     <RootNamespace>Esercizio_26_09_23_</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Nuova cartella\" />
+  </ItemGroup>
+
 </Project>

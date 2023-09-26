@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
 <!DOCTYPE html>
@@ -20,67 +20,46 @@
     <!-- BT - JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-    <div class="ms_wrapper" style="background-color: rgba(0, 0, 0, 0.5);">
+    <div class="d-flex flex-column" style="background-color: #ffb458; height:100%;">
+
         <header>
+            <nav class="navbar navbar-expand-lg" style="background-color: #ffb458; height:100%;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Index">Admin - Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="UserIndex">User - Side</a>
+                            </li>                         
+                        </ul>
+                        <img src="https://st4.depositphotos.com/22705892/29149/v/450/depositphotos_291497556-stock-illustration-creative-food-logo-simple-pizza.jpg" style="height:60px;"/>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
             <div class="container-fluid d-flex" style="justify-content:center; align-items:center; margin-bottom:50px; height: 350px; background-image:url('https://cdn.vox-cdn.com/thumbor/U6I_bfCqJUViBncjqYIs2orzivk=/0x188:787x778/920x613/filters:focal(0x188:787x778):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/48635261/garlic-knots-pizza.0.0.jpeg'); background-size: cover; background-position: center; text-align: center; color: white;">
                 <div style="border-radius: 50px; background-color:rgb(16 21 31 / 62%); width:650px; height:80%;">
                     <p style="font-size: 60px;">A Famo Strana Pizzeria</p>
                     <p style="font-size: 30px;;">Pizze assurde dal mondo, scelte di giornata!</p>
                 </div>
             </div>
-        </header>
+                    <!-- TABELLA -->
 
-        <main>
-            <!-- ALL CONTENT -->
-            <div class="d-flex container-fluid">
-                <div class="container" style="border-radius: 15px; height: 100%; background-color: #870000; padding: 50px 0 50px 0; justify-content: space-evenly" >
+                    <div class="d-flex" style="justify-content: center">
+                         <h2 style="color: white">Menu Pizze assurde di oggi!</h2>
+                    </div>
                     
-                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="height: 500px;">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="https://gogohanguk.com/wp-content/uploads/2021/03/Pizza-3.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-                                <div class="carousel-caption d-none d-md-block" style="border-radius: 10px; background-color:rgb(16 21 31 / 62%);">
-                                        <h5>Pizza: pe' mare e pe' tera</h5>
-                                        <p>Some representative placeholder content for the first slide.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://pa1.aminoapps.com/6157/95bb73eb372769a4f02adc302d728cb0ca686482_hq.gif" class="d-block w-100" alt="..." style="height: 500px;">
-                                <div class="carousel-caption d-none d-md-block" style="border-radius: 10px; background-color:rgb(16 21 31 / 62%);">
-                                        <h5>Pizza: Sfocata</h5>
-                                        <p>Some representative placeholder content for the second slide.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/13/9e/b6/90/photo1jpg.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-                                <div class="carousel-caption d-none d-md-block" style="border-radius: 10px; background-color:rgb(16 21 31 / 62%);">
-                                        <h5 >Pizza: La Pesantissima</h5>
-                                        <p>Some representative placeholder content for the third slide.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>  
-                        
-                        <!-- TABELLA -->
-
-                        <div class="d-flex" style="justify-content: center">
-                            <h2 style="color: white">Lista Pizze assurde di oggi!</h2>
-                        </div>
-
-                    <table class="table" style="color: white">
+                    <div class="p-3">
+                        <table class="table" style="color: white">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
@@ -110,66 +89,11 @@
                                 </tr>
                             </tbody>
                         </table>
-
-                    <!-- CARTE -->
-                    <div class="d-flex" style="justify-content: space-evenly;">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- END ALL CONTENT -->
+                   
         </main>
         <footer>
-            <div class="container" style="border-radius: 50% 50% 0px 0px; height: 100px; background-color: darkorange;">
+            <div class="container" style="border-radius: 50% 50% 0px 0px; height: 100px; background-color: #be3500; justify-contentend">
             </div>
         </footer>
     </div>
